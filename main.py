@@ -23,10 +23,9 @@ def camel(string):
         if symbol.isalpha():
             if count % 2 ==0:
                 new_string += symbol.upper()
-                count += 1
             else:
                 new_string += symbol.lower()
-                count += 1
+            count += 1
         else:
             new_string += symbol
     return new_string
